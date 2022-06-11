@@ -1,0 +1,49 @@
+# HCV_IIRC
+ code for our CVPRW 2022 paper [Incremental Meta-Learning via Episodic Replay Distillation for Few-Shot Image Recognition](https://openaccess.thecvf.com/content/CVPR2022W/CLVision/html/Wang_Incremental_Meta-Learning_via_Episodic_Replay_Distillation_for_Few-Shot_Image_Recognition_CVPRW_2022_paper.html) by [Kai Wang](https://wangkai930418.github.io/), [Xialei Liu](https://xialeiliu.github.io/), [Andrew D. Bagdanov](https://scholar.google.com/citations?user=_Fk4YUcAAAAJ&hl=en) and [Joost van de Weijer](http://www.cvc.uab.es/LAMP/joost/).
+
+## required packages
+
+All installed packages in our running environment are in "requirements.txt", please check whether you have any conflicts if enconterring any problem.
+
+### 1st step: download dataset and create split
+
+1,Pleas run 
+
+```
+get_cifar_data.py
+```
+
+to download cifar dataset 
+from torchvision.datasets automatically and it will be 
+saved at "./data/cifar".
+
+2, Run
+```
+cd ./data/cifar
+./data/cifar/create_cifar_split_auto.py
+```
+to create the 16-task cifar split.
+
+### 2nd step: run the experiments 
+
+cd back to the root directory. Then run
+
+```
+cd ../..
+reproduce.sh
+```
+to reproduce the CIFAR100 experiments in our paper. 
+
+FT_cifar.py is the finetuning baseline.
+ERD_cifar.py is our method ERD implementation.
+
+
+### 3rd step: test the experiments
+
+Run 
+```
+test_cifar.sh
+```
+to test the model performance.
+
+By default, we print out the test accuracy and save the results in "./results/" directory. 
