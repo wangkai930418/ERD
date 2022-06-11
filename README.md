@@ -1,3 +1,5 @@
+![CVPRW poster](./poster.jpg)
+
 # ERD for IML
  code for our CVPRW 2022 paper [Incremental Meta-Learning via Episodic Replay Distillation for Few-Shot Image Recognition](https://openaccess.thecvf.com/content/CVPR2022W/CLVision/html/Wang_Incremental_Meta-Learning_via_Episodic_Replay_Distillation_for_Few-Shot_Image_Recognition_CVPRW_2022_paper.html) by [Kai Wang](https://wangkai930418.github.io/), [Xialei Liu](https://xialeiliu.github.io/), [Andrew D. Bagdanov](https://scholar.google.com/citations?user=_Fk4YUcAAAAJ&hl=en), [Luis Herranz](http://www.lherranz.org/), Shangling Jui, and [Joost van de Weijer](http://www.cvc.uab.es/LAMP/joost/).
 
@@ -65,6 +67,3 @@ By default, we print out the test accuracy and save the results in *./results/* 
     pages     = {3729-3739}
 }
 ```
-
-## POSTER
-![CVPRW poster](./poster.jpg)
