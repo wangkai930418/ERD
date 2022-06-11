@@ -7,7 +7,7 @@ Our supplementary material is also attached here as [supp.pdf](https://github.co
 
 All installed packages in our running environment are in *requirements.txt*, please check whether you have any conflicts if enconterring any problem.
 
-### 1st step: download dataset and create split
+## 1st step: download dataset and create split
 
 1,Pleas run 
 
@@ -26,7 +26,7 @@ cd ./data/cifar
 ```
 to create the 16-task cifar split.
 
-### 2nd step: run the experiments 
+## 2nd step: run the experiments 
 
 cd back to the root directory. Then run
 
@@ -40,7 +40,7 @@ to reproduce the CIFAR100 experiments in our paper.
 *ERD_cifar.py* is our method ERD implementation.
 
 
-### 3rd step: test the experiments
+## 3rd step: test the experiments
 
 Run 
 ```
@@ -50,9 +50,11 @@ to test the model performance.
 
 By default, we print out the test accuracy and save the results in *./results/* directory. 
 
-### **REMIND ME** if you need further information and details on other datasets since I may forget to update the repositories later.
 
-### Our bibtex is:
+
+## **REMIND ME** if you need further information and details on other datasets since I may forget to update the repositories later.
+
+## Our bibtex is:
 ```
 @InProceedings{Wang_2022_CVPR,
     author    = {Wang, Kai and Liu, Xialei and Bagdanov, Andrew D. and Herranz, Luis and Jui, Shangling and van de Weijer, Joost},
@@ -63,3 +65,6 @@ By default, we print out the test accuracy and save the results in *./results/* 
     pages     = {3729-3739}
 }
 ```
+
+## POSTER
+![CVPRW poster](./poster.jpg)
